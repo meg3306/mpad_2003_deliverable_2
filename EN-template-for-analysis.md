@@ -3,44 +3,21 @@
 **Student's First Name & Last Name**<br>
 **Presented to Jean-Sébastien Marier**<br>
 
-# Deliverable 2: Exploratory Data Analysis (EDA)
+Date: November 4, 2026  
+Course: MPAD 2003 Introductory Data Storytelling  
+Student: Emilie Megan Kazadi 
+Presented to Jean-Sébastien Marier 
 
-Use one hashtag symbol (`#`) to create a level 1 heading like this one.
+# Deliverable 2: Exploratory Data Analysis - Ottawa 311 Housing Complaints
 
-## Foreword
-
-For this assignment, you must clean and analyze the dataset from Deliverable 1, create exploratory charts/visualizations, and identify a potential story. Your assignment must clearly detail your process. You are expected to write about 1,000-1,200 words, and to include several screen captures showing the different steps you went through. Your assignment must be written with the Markdown format and submitted on GitHub.
-
-I have been assigning different versions of this project to my digital journalism and data storytelling students for a few years now. Its structure was inspired by the main sections/chapters of [*The Data Journalism Handbook*](https://datajournalism.com/read/handbook/one/). This version was further inspired by the [Key Capabilities in Data Science](https://extendedlearning.ubc.ca/programs/key-capabilities-data-science) program offered by the University of British Columbia (UBC).
-
-**Here are some useful resources for this assignment:**
-
-* [GitHub's *Basic writing and formatting syntax* page](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-* [The template repository for this assignment in case you delete something by mistake](https://github.com/jsmarier/jou4100_jou4500_mpad2003_project2_template)
-
-Did you notice how to create a hyperlink? In Markdown, we put the clickable text between square brackets and the actual URL between parentheses.
-
-And to create an unordered list, we simply put a star (`*`) before each item.
 
 ## 1. Getting Data
 
-Use two hashtag symbols (`##`) to create a level 2 heading like this one.
+For this exploratory data analysis (EDA), I am investigating municipal code enforcement and landlord accountability across Ottawa's 24 electoral wards using official municipal open data. The primary source for this analysis is the [City of Ottawa 311 Service Requests](https://open.ottawa.ca/search?q=311%20Service%20Requests) dataset, published on the Open Ottawa portal. 
 
-To include a screen capture, use the sample code below. Your images should be saved in the same folder as your `.md` file.
+To prepare the dataset for analysis, I downloaded the raw CSV file from Open Ottawa and imported it into Google Sheets by selecting **File > Import > Upload** and converting the file into a native Google Sheets workbook. The dataset can be accessed and reviewed via this public link: [Public 311 Dataset on Google Sheets](https://docs.google.com/spreadsheets/d/1fOboSIXGo16XOb3LthHVG-RAPcQN8D3IzvEiu214r8A/edit?usp=sharing).
 
-![](import-screen-capture.png)<br>
-*Figure 1: The "Import file" prompt on Google Sheets.*
-
-**Here are examples of functions and lines of code put in grey boxes:**
-
-1. If you name a function, put it between "angled" quotation marks like this: `IMPORTHTML`.
-1. If you want to include the entire line of code, do the same thing, albeit with your entire code: `=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)`.
-1. Alternatively, you can put your code in an independent box using the template below:
-
-``` r
-=IMPORTHTML("https://en.wikipedia.org/wiki/China"; "table", 5)
-```
-This also shows how to create an ordered list. Simply put `1.` before each item.
+![Raw Dataset in Google Sheets](raw_data.jpg)
 
 ## 2. Understanding Data
 
