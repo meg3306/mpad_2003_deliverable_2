@@ -1,8 +1,3 @@
-**Date**<br>
-**Course Code & Course Name**<br>
-**Student's First Name & Last Name**<br>
-**Presented to Jean-Sébastien Marier**<br>
-
 Date: November 4, 2026  
 Course: MPAD 2003 Introductory Data Storytelling  
 Student: Emilie Megan Kazadi 
@@ -45,23 +40,33 @@ To transform the raw administrative file into a clean dataset, I executed three 
 
 ### 2.3. Analyzing Data
 
-Insert text here.
+To examine wheter municipal code enforcement delays vary across Ottawa's geographic areas, I conducted an exploratory data analysis in Google Sheets using a pivot table and an exploratory column chart. I specifically selected `WARD_NAME`, `TICKET_ID`, and `RESPONSE_TIME_DAYS` because comparing ticket counts alongside average resolution durations across electoral wards directly tests my core research hypothesis.
 
-**This section should include a screen capture of your pivot table, like so:**
+## Pivot Table Setup
 
-![](pivot-table-screen-capture.png)<br>
-*Figure 2: This pivot table shows...*
+I made a Pivot Table with `WARD_NAME` in the rows, summarizing `TICKET_ID` using **COUNTA** (to measure total complaint volume per ward) and `RESPONSE_TIME_DAYS` using **AVERAGE** (to calculate mean resolution duration in days).
 
-**This section should also include a screen capture of your exploratory chart, like so:**
+![Pivot Table Summary of 311 Complaints by Ward](pivot_table.png)
 
-![](chart-screen-capture.png)<br>
-*Figure 3: This exploratory chart shows...*
+## Exploratory Visualization
+
+Using the pivot table summary, I generated an **exploratory bar chart** comparing average response times across Ottawa's electoral wards.
+
+![Exploratory Chart of Response Duration by Ward](exploratory_chart.png)
+
+## Key Analytical Findings & Journalistic Story Angle
+
+ **Geographic Disparities:** Wards in Ottawa's urban core—such as **Rideau-Vanier (Ward 12)** and **Somerset (Ward 14)**—log high volumes of property standards complaints and experience an average resolution delay of **24.5 days**.
+* **Suburban Comparison:** By contrast, suburban wards such as **Kanata South (Ward 23)** and **Barrhaven East (Ward 24)** average significantly shorter resolution times of **8.2 days**.
+* **Standout Statistic:** Urban core tenants wait nearly **three times longer** on average for municipal enforcement action on property standards compared to suburban property owners.
+* **Potential News Story:** These statistical findings point toward a compelling investigative story: *a systemic municipal code enforcement gap where low-income tenants in urban core wards face prolonged delays for vital housing repairs compared to residents in suburban areas.*
+* **Variables for Further Investigation:** Next steps would require analyzing `SUBJECT` (to break down response times by specific complaint sub-types like heating vs. noise) and cross-referencing ward boundaries with Statistics Canada median income data.
 
 ## 3. Delivering Data
 
 ## Further Investigative Story angle
 
-While the exploratory data analysis confirms a geographic gap in municipal code enforcement times between urban core and suburban wards, fully reporting this story requires moving beyond administrative data to examine human impacts and policy roots. To develop a comprehensive news story, I would investigate the core question: *Are low-income tenants in Ottawa's urban core facing systemic municipal neglect when reporting vital housing violations compared to property owners in higher-income suburban wards?*
+While the exploratory data analysis confirms a geographic gap in municipal code enforcement times between urban core and suburban wards, fully reporting this story requires moving beyond administrative data to examine human impacts and policy roots. To develop a comprehensive news story, I would investigate the core question: Are low-income tenants in Ottawa's ubran core facing systemic municipal neglect when reporting vital housing violations compared to property owners in high-income surburban wards?
 
 ## Additional Data & Records Needed
 
@@ -76,10 +81,18 @@ To humanize the data, I would conduct qualitative interviews with key stakeholde
 **City Enforcement Official:** The Director of **City of Ottawa By-law and Regulatory Services** to address why response delays are longer in urban core wards and whether staffing shortages exist.
 **Affected Resident:** A tenant residing in Ward 12 (Rideau-Vanier) who has experienced unaddressed heating failures or pest infestations during winter months.
 
+## Contextual Sources
+
+**Ottawa ACORN Community Survey:** Reports on housing conditions and landlord accountability in tenant-heavy Ottawa neighborhoods.
+**Social Planning Council of Ottawa (SPCO)** Data reports analyzing low-income housing equity and neighborhood inequality across municipal wards.
+
 ## 4. References
 
-Include a list of your references here. Please follow [APA](https://apastyle.apa.org/style-grammar-guidelines/references) or [MLA](https://www.mla.org/MLA-Style) guidelines for references. Hanging paragraphs aren't required though.
+* Gray, J., Chambers, L., & Bounegru, L. (Eds.). (2012). *The Data Journalism Handbook: How Journalists Can Use Data to Improve the News*. O'Reilly Media. https://datajournalism.com/search?q=The+Data+Journalism+Handbook%3A+How+Journalists+Can+Use+Data+to+Improve+the+New 
+* Statistics Canada. (2020). *Data accuracy and validation: Methods to ensure the quality of data* (Catalogue No. 892000062020008). Government of Canada. https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/892000062020008
+* Statistics Canada. (2021). *Assessing data in a time of misinformation: A step-by-step guide* [PDF]. Government of Canada. https://www.statcan.gc.ca/en/wtc/data-literacy/catalogue/assessing-data-time-misinformation.pdf
+* Statistics Canada. (2021). *Statistics: Power from Data!* Government of Canada. https://www150.statcan.gc.ca/n1/edu/power-pouvoir/toc-tdm/5214718-eng.htm
 
-**Here's an example:**
+## AI Disclosure Statement
 
-Bounegru, L., & Gray, J. (Eds.). (2021). *The Data Journalism Handbook 2: Towards A Critical Data Practice*. Amsterdam University Press. [https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/hgdufh/alma991022890087305153)
+I used AI assistant during the preparation of this assignment. The AI was used to assist with formatting the Markdown structure, troubleshooting Git/GitHub terminal commands, and reviewing report syntax. All dataset cleaning, pivot table calculations, visual chart design, data interpretations, and final reporting decisions were performed independently by me(Emilie Megan Kazadi).
