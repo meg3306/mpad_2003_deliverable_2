@@ -23,7 +23,7 @@ To assess the accuracy, validity, and overall quality of the City of Ottawa 311 
 
  **Valid Data:** The majority of entries in `WARD_NAME` and `CREATED_DATE` represent valid administrative records that conform to standard municipal naming conventions across Ottawa's 24 electoral wards.
 
- **Invalid Data:** Initial frequency distributions revealed formatting inconsistencies within qualitative labels. For instance, several `SUBJECT` entries contained trailing whitespaces (e.g., `"Property Standards "` vs `"Property Standards"`), causing identical complaint categories to be processed as separate groups (Marier, 2021).
+ **Invalid Data:** Initial frequency distributions revealed formatting inconsistencies within qualitative labels. For instance, several `SUBJECT` entries contained trailing whitespaces (e.g., `"Property Standards "` vs `"Property Standards"`), causing identical complaint categories to be processed as separate groups.
 
  **Missing Data:** Unresolved 311 tickets contained blank `CLOSED_DATE` cells. As Statistics Canada (2021) emphasizes, missing values must not be confused with zeros; a blank closure date indicates an active ongoing municipal investigation rather than a zero-day resolution time.
 
